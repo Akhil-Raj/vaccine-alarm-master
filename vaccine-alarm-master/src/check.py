@@ -6,11 +6,11 @@ import click
 from twilio.rest import Client
 
 # Your Account SID from twilio.com/console
-account_sid = "AC4f20b5df995843f5b73d443a4bc321db"
+account_sid = ""
 # Your Auth Token from twilio.com/console
-auth_token  = "6c6f842638b2fbaa94769c48c294ab9b"
-to_number = "+919045907963"
-from_number = "+13392934573"
+auth_token  = ""
+to_number = ""
+from_number = ""
 
 client = Client(account_sid, auth_token)
 
@@ -65,8 +65,7 @@ def check(district_id, age_limit, pincode_blacklist, min_seats, whitelist, dose_
                 msg = (center["name"] + "," + str(center["pincode"]) + " has " +
                         str(session["available_capacity"]) + " vaccine slots for " + str(session["vaccine"]))
                 print(msg)
-                #message = client.messages.create(to="+919599269442", from_="+13392934573", body=msg)
-                #print(message.sid)
+               
                 message = client.messages.create(to=to_number, from_=from_number, body=msg)
                 print(message.sid)
                 exit(0)
