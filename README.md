@@ -55,7 +55,7 @@ pipenv install
 or
 
 ```bash
-pip install -r requirements.txt
+pip install -r vaccine-alarm-master/requirements.txt
 ```
 
 ### Setup Twilio account to enable message service
@@ -64,9 +64,9 @@ pip install -r requirements.txt
 - Sign up for a new account as a free trial
 - Verify using the mobile number you want to send the notification messages to
 - Go to console and get a trial number
-- Copy and paste the "Accound Sid" and the "Auth Token" from the console in check.py and twilioFile.py files(in the src folder)
+- Copy and paste the "Accound Sid" and the "Auth Token" from the console in check.py and twilioFile.py files(in the vaccine-alarm-master/src folder)
 - Change the "to_number" and "from_number" numbers to the number you want to send notifications to and the trial number respectively, in both check.py and twilioFile.py files.
-- Run "python twilioFile.py" to check that you are able to recieve the message on your mobile successfully. If not, put up an issue or checkout the twilio's website.
+- Run "python twilioFile.py" in vaccine-alarm-master folder to check that you are able to recieve the message on your mobile successfully. If not, put up an issue or checkout the twilio's website.
 
 ### Run checker
 
