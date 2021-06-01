@@ -5,7 +5,7 @@ Check for Vaccine availability in a district at specified intervals and sends a 
 -   [Vaccine Alarm](#vaccine-alarm)
     -   [Usage](#usage)
         -   [Install Dependencies](#install-dependencies)
-        -   [Setup twilio account]()
+        -   [Setup twilio account](#setup-twilio-account-to-enable-message-service)
         -   [Run checker](#run-checker)
 
 ## Usage
